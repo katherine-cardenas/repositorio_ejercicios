@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla 3</title>
+    <style>
+        table {
+            border-bottom: 1.5px solid rgb(91, 156, 131);
+        }
+
+        th {
+            border: 1px solid greenyellow;
+
+        }
+
+        .fila-nombre-empleado { 
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        
+        .titulo {
+            font-family: sans-serif;
+            color: rgb(116, 199, 255);
+            padding: 1rem;
+            font-size: 2rem;
+        }
+
+        .titulo-2 {
+
+            color: rgb(0, 73, 18);
+            padding: 1rem;
+            text-align: left;
+
+        }
+
+        .v {
+            background-color: rgb(94, 179, 94);
+        }
+
+        .p {
+            background-color: rgb(190, 185, 185);
+        }
+
+        .e {
+            background-color: rgb(66, 123, 230);
+        }
+
+        .dias {
+            background-color: rgb(39, 138, 108);
+            color: whitesmoke;
+        }
+
+        .color-fila {
+            background-color: rgb(209, 209, 209);
+        }
+
+        .color-fila-total {
+            background-color: rgb(172, 188, 211);
+        }
+
+        .bordes-ausencias {
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        .dias-totales {
+            background: fixed gray 5%;
+
+        }
+
+        .primera-linea {
+            color: rgb(5, 78, 5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Tabla 3</h1>
+
+        <table>
+            <caption class="primera-linea"><strong>Programación de ausencias de empleados</strong></caption>
+            <tbody>
+                <tr>
+                    <td colspan="33" class="titulo"><strong>ENERO</strong></td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <th>Claves de los tipos de ausencia</th>
+                    <th class="v">V</th>
+                    <th>Vacaciones</th>
+                    <th class="p">P</th>
+                    <th>Personal</th>
+                    <th class="e">E</th>
+                    <th>Enfermedad</th>
+                    <th class="per-1"></th>
+                    <th>Personalizado 1</th>
+                    <th class="per-2"></th>
+                    <th>Personalizado 2</th>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+<table>
+            <thead>
+                <tr>
+                    <th class="titulo-2"></th>
+                    <th class="titulo-2" colspan="31">Fecha de ausencia</th>
+                    <th class="titulo-2">2026</th>
+                </tr>
+
+                <tr>
+                    <th>________</th>
+                    <th>ju</th>
+                    <th>vi</th>
+                    <th>sa</th>
+                    <th>do</th>
+                    <th>lu</th>
+                    <th>ma</th>
+                    <th>mi</th>
+                    <th>ju</th>
+                    <th>vi</th>
+                    <th>sa</th>
+                    <th>do</th>
+                    <th>lu</th>
+                    <th>ma</th>
+                    <th>mi</th>
+                    <th>ju</th>
+                    <th>vi</th>
+                    <th>sa</th>
+                    <th>do</th>
+                    <th>lu</th>
+                    <th>ma</th>
+                    <th>mi</th>
+                    <th>ju</th>
+                    <th>vi</th>
+                    <th>sa</th>
+                    <th>do</th>
+                    <th>lu</th>
+                    <th>ma</th>
+                    <th>mi</th>
+                    <th>ju</th>
+                    <th>vi</th>
+                    <th>sa</th>
+                </tr>
+
+                <tr>
+                    <th class="fila-nombre-empleado">Nombre del empleado</th>
+                    <th class="dias">1</th>
+                    <th class="dias">2</th>
+                    <th class="dias">3</th>
+                    <th class="dias">4</th>
+                    <th class="dias">5</th>
+                    <th class="dias">6</th>
+                    <th class="dias">7</th>
+                    <th class="dias">8</th>
+                    <th class="dias">9</th>
+                    <th class="dias">10</th>
+                    <th class="dias">11</th>
+                    <th class="dias">12</th>
+                    <th class="dias">13</th>
+                    <th class="dias">14</th>
+                    <th class="dias">15</th>
+                    <th class="dias">16</th>
+                    <th class="dias">17</th>
+                    <th class="dias">18</th>
+                    <th class="dias">19</th>
+                    <th class="dias">20</th>
+                    <th class="dias">21</th>
+                    <th class="dias">22</th>
+                    <th class="dias">23</th>
+                    <th class="dias">24</th>
+                    <th class="dias">25</th>
+                    <th class="dias">26</th>
+                    <th class="dias">27</th>
+                    <th class="dias">28</th>
+                    <th class="dias">29</th>
+                    <th class="dias">30</th>
+                    <th class="dias">31</th>
+                    <th class="fila-nombre-empleado">Total de días</th>
+                </tr>
+            </thead>
+                        <tfoot>
+                <tr>
+                    <th class="color-fila-total">Enero total</th>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total">2</td>
+                    <td class="color-fila-total">2</td>
+                    <td class="color-fila-total">3</td>
+                    <td class="color-fila-total">3</td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total">2</td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total"></td>
+                    <td class="color-fila-total">1</td>
+                    <td class="color-fila-total">25</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <th>Pedro Picapiedra</th>
+                    <td></td>
+                    <td></td>
+                    <td class="v">V</td>
+                    <td class="v">V</td>
+                    <td class="v">V</td>
+                    <td class="v">V</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="v">V</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="dias-totales">5</td>
+                </tr>
+
+                <tr>
+                    <th class="color-fila">Pablo Mármol</th>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="e">E</td>
+                    <td class="e">E</td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="p">P</td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="e">E</td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="v">V</td>
+                    <td class="v">V</td>
+                    <td class="v">V</td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="dias-totales">7</td>
+                </tr>
+
+                <tr>
+                    <th>Dora Exploradora</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="p">P</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="e">E</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="e">E</td>
+                    <td></td>
+                    <td></td>
+                    <td class="dias-totales">3</td>
+                </tr>
+
+                <tr>
+                    <th class="color-fila">Kika Superbruja</th>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="p">P</td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="e">E</td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="v">V</td>
+                    <td class="v">V</td>
+                    <td class="v">V</td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="color-fila"></td>
+                    <td class="dias-totales">4</td>
+                </tr>
+
+                <tr>
+                    <th>Pocoyo</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="e">E</td>
+                    <td class="v">V</td>
+                    <td class="v">V</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="e">E</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="e">E</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="v">V</td>
+                    <td class="dias-totales">6</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+
+
+
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            width: 80%;
+            margin: auto;
+        }
+
+        .color_box {
+            border-radius: 1rem;
+            background-color: rgb(209, 209, 209);
+            margin: 1rem 0;
+            border: grey;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+     
+
+        .fila {
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 0.3rem;
+            padding: 16px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 31.33%;
+            justify-content: space-evenly;
+        }
+        #box2 .fila{
+            width: 48%;
+            justify-content: space-evenly;
+        }
+    
+        #box3 .fila {
+            width: 48%;
+            justify-content: space-evenly;
+        }
+        
+        #box3 .archivo{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        #box4 div {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            
+        
+        }
+        #box4 {
+            background-color: grey;
+            border-radius: 0.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Formulario HTML5</h1>
+        <form method="post" enctype="multipart/form-data">
+            <fieldset class="color_box">
+                <div class="fila">
+                    <label for="f_name">Nombre</label><br>
+                    <input text="text" name="f_name" id="f_name" value="Tu nombre aquí">
+                </div>
+
+                <div class="fila">
+                    <label for="f_mail">Email</label><br>
+                    <input type="email" name="f_mail" id="f_mail" value="Un email válido">
+                </div>
+
+                <div class="fila">
+                    <label for="f_tel">Teléfono</label><br>
+                    <input type="tel" name="f_tel" id="f_tel" value="Teléfono actual">
+                </div>
+
+                <div class="fila">
+                    <label for="f_nacimiento">Fecha de nacimiento</label><br>
+                    <input type="date" name="f_nacimiento" id="f_nacimiento">
+                </div>
+
+                <div class="fila">
+                    <label for="f_horas">Horas semanales de estudio</label><br>
+                    <input type="range" name="f_horas" id="f_horas" min="1" max="60" step="5" value="10">
+                </div>
+
+                <div class="fila">
+                    <label for="f_contraseña">Escribe tu contraseña</label><br>
+                    <input type="password" name="f_contraseña" id="f_contraseña" value="Contraseña">
+
+                </div>
+            </fieldset>
+
+
+            <fieldset class="color_box" id="box2">
+                <div class="fila">
+                    <p>Selecciona rango de edad</p>
+                    <input type="radio" name="f_edad" value="1" id="f_edad">
+                    <label for="f_edad">Menos de 20 años</label><br>
+                    <input type="radio" name="f_edad" value="2" id="f_edad">
+                    <label for="f_edad">Entre 20 y 40 años</label><br>
+                    <input type="radio" name="f_edad" value="3" id="f_edad">
+                    <label for="f_edad">Más de 40 años</label><br>
+                </div>
+
+                <div class="fila">
+                    <p>Indica los temas de interés</p>
+                    <input type="checkbox" name="t_interes" id="t_interes" value="Sí">
+                    <label for="t_interes">HTML y CSS</label><br>
+                    <input type="checkbox" name="t_interes" id="t_interes" value="Sí">
+                    <label for="t_interes">JavaScript</label><br>
+                    <input type="checkbox" name="t_interes" id="t_interes">
+                    <label for="t_interes">PHP</label>
+                </div>
+
+                <div class="fila">
+                    <label for="f_estudios">Indica el nivel de estudios terminado</label><br>
+                    <select name="f_estudios" id="f_estudios" size="4">
+                        <option value="1">ESO</option>
+                        <option value="2">Bachillerato</option>
+                        <option value="3">Grado Medio</option>
+                        <option value="4" selected>Grado superior</option>
+                        <option value="5">Diplomatura</option>
+                        <option value="6">Licenciatura</option>
+                        <option value="7">Máster</option>
+                        <option value="8">Doctorado</option>
+                    </select>
+                </div>
+
+                <div class="fila">
+                    <label for="f_turno">Selecciona un turno favorito de clase</label><br>
+                    <select name="f_turno" id="f_turno">
+                        <option value="1" selected>Indiferente</option>
+                        <option value="2">Mañana</option>
+                        <option value="3">Tarde</option>
+                        <option value="4">Noche</option>
+                    </select>
+                </div>
+            </fieldset>
+
+
+            <fieldset class="color_box" id="box3">
+                <div class="fila">
+                    <label for="f_comentario">Comentario</label><br>
+                    <textarea name="f_comentario" id="f_comentario">Escribe aquí tu
+comentario</textarea>
+                </div>
+
+                <div class="fila" id="archivo">
+                    <label for="f_archivo">Selecciona un archivo</label><br>
+                    <input type="file" name="f_archivo" id="f_archivo" accept=".pdf">
+                </div>
+            </fieldset>
+
+            <fieldset class="color_box" id="box4">
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                    <button type="button">Archivar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

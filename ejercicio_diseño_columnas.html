@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de columnas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            width: 1100px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .cabecera {
+            width: 100%;
+            height: 140px;
+            background-color: rgb(255, 208, 1);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: rgb(26, 26, 158);
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .izquierda {
+            width: 220px;
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1rem;
+
+        }
+
+        .izquierda h2 {
+            color: brown;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: center;
+            
+        }
+
+        .art-bloque-1 {
+            background-color: white;
+            padding: 1.5rem 1rem;
+            margin: 10px;
+            font-size: 14px;
+
+        }
+
+        .izquierda article h3 {
+            color: brown;
+            text-align: left;
+            padding-bottom: 15px;
+            margin-top: -20px;
+        }
+
+
+        .centro {
+            width: 630px;
+
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .centro h2 {
+            padding: 15px;
+            font-size: 22px;
+            
+        }
+
+        .texto-centro {
+            padding: 0 1rem 1rem 1rem;
+            font-size: 14px;
+
+        }
+
+        .derecha {
+
+            flex-direction: column;
+            background-color: rgb(0, 0, 102);
+            font-family: Arial, Helvetica, sans-serif;
+            width: 220px;
+            padding: 1rem;
+
+        }
+
+        .art-bloque-2 {
+            background-color: white;
+            padding: 1.5rem 1rem;
+            margin: 10px;
+            font-size: 14px;
+        }
+
+        .derecha article h3 {
+            color: rgb(0, 0, 102);
+            padding-bottom: 15px;
+            font-weight: bold;
+            margin-top: -20px;
+        }
+
+        .derecha h2 {
+            color: white;
+            font-size: 16px;
+            font-weight: 25px;
+            text-align: center;
+        }
+
+        .pie {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 12px;
+            padding: 2rem;
+            border-top: 10px solid rgb(0, 0, 102);
+            
+            margin: 10px 0 0;
+        }
+
+        .centro img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <header class="cabecera">
+            <h1>En la cabecera del sitio Web usamos un <br>&lt; h1 &gt;</h1>
+
+        </header>
+
+        <aside class="izquierda">
+            <h2>BLOQUE LATERAL CON &lt; H2 &gt;</h2>
+            <article class="art-bloque-1">
+                <h3>Apartado 1</h3>
+                <p>Lorem, adipisicing elit. Ducimus, reiciendis.</p>
+            </article>
+
+            <article class="art-bloque-1">
+                <h3>Apartado 2</h3>
+                <p>Lorem ipsum dolor adipisicing  Modi, ullam?</p>
+            </article>
+
+            <article class="art-bloque-1">
+                <h3>Apartado 3</h3>
+                <p>Lorem ipsum dolor,  elit. Voluptate, quibusdam.</p>
+            </article>
+        </aside>
+
+        <main class="centro">
+            <p><img src="img ejercicio 10/principal.jpg" alt="principal"></p>
+            <h2>Este es el título del apartado central. Es una etiqueta h2 </h2>
+            <p class="texto-centro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga libero odit
+                repudiandae neque atque!
+                Tempora re provident consequuntur excepturi ullam beatae ratione optio
+                assumenda corporis perspiciatis sapiente voluptatum ut rerum quidem id a nostrum harum blanditiis!
+            </p><br>
+
+            <p class="texto-centro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi suscipit assumenda
+                harum excepturi
+                laudantium temporibus at! quod quibusdam cupiditate! Ullam nostrum
+                nam nobis? Cum similique animi consequatur maxime esse ex mollitia voluptate sequi, dicta aspernatur?
+            </p>
+
+
+        </main>
+
+
+
+        <aside class="derecha">
+            <h2>BLOQUE NOTICIAS</h2>
+            <article class="art-bloque-2">
+                <h3>NOTICIA 1</h3>
+                <P>Lorem ipsum dolor sit amet Optio, officia!</P>
+            </article>
+
+            <article class="art-bloque-2">
+                <h3>NOTICIA 2</h3>
+                <P>Lorem ipsum dolor, sit amet. At, doloremque!</P>
+            </article>
+
+            <article class="art-bloque-2">
+                <h3>NOTICIA 3</h3>
+                <p>Lorem ipsum dolor sit amet Quis, eveniet.</p>
+            </article>
+        </aside>
+
+
+        <footer class="pie">
+            <p>Dirección: calle, código postal y población</p>
+            <p>Email: micorreo@dominio.com</p>
+            <p>Teléfono: 123 456 789</p>
+
+        </footer>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

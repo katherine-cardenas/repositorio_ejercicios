@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuadrículas</title>
+<style>
+* {
+box-sizing: border-box;
+}
+
+.contenedor {
+width: 750px;
+height: 350px;
+border: 5px solid black;
+margin-bottom: 50px;
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+
+margin-top: 20px;
+
+}
+
+.contenido-1 {
+width: 120px;
+height: 120px;
+background-color: cyan;
+
+}
+
+.contenido-2 {
+width: 120px;
+height: 120px;
+background-color: cyan;
+}
+
+#modelo-1 {
+justify-content: flex-start;
+align-items: flex-start;
+padding: 20px;
+gap: 20px;
+}
+
+#modelo-2 {
+justify-content: flex-end;
+align-items: flex-end;
+padding: 20px;
+gap: 20px;
+
+}
+
+#modelo-3 {
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 20px;
+
+}
+#modelo-4 {
+justify-content: flex-start;
+align-content: flex-start;
+padding: 20px 130px 20px 20px;
+gap: 20px;
+}
+
+#modelo-5 {
+justify-content: flex-end;
+align-content: flex-end;
+padding: 20px 20px 20px 130px;
+gap: 20px;
+
+}
+#modelo-6 {
+justify-content: center;
+align-content: center;
+padding: 20px 100px;
+gap: 20px;
+}
+</style>
+</head>
+
+<body>
+<h1>Modelo1</h1>
+<div class="contenedor" id="modelo-1">
+
+<div class="contenido-1"></div>
+<div class="contenido-1"></div>
+<div class="contenido-1"></div>
+<div class="contenido-1"></div>
+
+
+</div>
+
+
+<h1>Modelo 2</h1>
+<div class="contenedor" id="modelo-2">
+
+<div class="contenido-1"></div>
+<div class="contenido-1"></div>
+<div class="contenido-1"></div>
+<div class="contenido-1"></div>
+
+</div>
+
+
+<h1>Modelo 3</h1>
+<div class="contenedor" id="modelo-3">
+
+<div class="contenido-1"></div>
+<div class="contenido-1"></div>
+<div class="contenido-1"></div>
+<div class="contenido-1"></div>
+
+
+</div>
+
+<h1>Modelo 4</h1>
+<div class="contenedor" id="modelo-4">
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+</div>
+
+
+<h1>Modelo 5</h1>
+<div class="contenedor" id="modelo-5">
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+
+</div>
+
+
+<h1>Modelo 6</h1>
+<div class="contenedor" id="modelo-6">
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+<div class="contenido-2"></div>
+
+</div>
+
+</body>
+
+</html>

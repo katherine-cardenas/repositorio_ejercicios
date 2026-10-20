@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicios de clase </title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --tipo-cuerpo: "Poppins", sans-serif;
+            --tipo-titulos: "Poppins", sans-serif;
+            --color-base: #ffffff;
+            --color-fondo: #050508;
+            --color-destacado: #ffd400;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-base);
+            font-family: var(--tipo-cuerpo);
+            line-height: 1.6;
+            padding: 50px; 
+        }
+
+        .diapositiva {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            width: 100%;
+        }
+
+        .texto_principal {
+            color: var(--color-destacado); 
+            font-family: var(--tipo-titulos);
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .diapositiva a {
+            color: var(--color-base);
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--color-destacado);
+            padding-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+
+        .diapositiva a:hover {
+            color: var(--color-destacado);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <main>
+            <div class="diapositiva">
+                <h1 class="texto_principal">Ejercicios de clase</h1>
+                <a href="ejercicio_tablas.html" target="_blank">Ejercicio Tablas</a>
+                <a href="ejercicio_formulario.html" target="_blank">Ejercicio Formulario</a>
+                <a href="ejercicio_diseno_columnas.html" target="_blank">Ejercicio Columnas</a>
+                <a href="ejercicio_datos.html" target="_blank">Ejercicio Datos</a>
+                <a href="ejercicio_cuadriculas.html" target="_blank">Ejercicio Cuadrículas</a>
+            </div>
+        </main>
+       
+    </div>
+</body>
+
+</html>
