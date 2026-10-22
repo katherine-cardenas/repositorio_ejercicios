@@ -1,0 +1,302 @@
+@font-face {
+    font-family: FuenteHarryPotter;
+    src: url(Fuente/HARRYP__.TTF) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(30, 30, 34);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f8f9fa;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 40px;
+
+}
+
+.menu {
+    width: 100%;
+    min-height: 250px;
+    background-image: url(img_harry/hogwarts.jpg);
+    background-size: cover;
+    background-position: top 20% right 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+
+/* PELIS-LIBROS */
+main {}
+
+.h1-menu {
+    font-family: FuenteHarryPotter;
+
+    color: #eeba30;
+    text-shadow: 2px 2px 4px #740001;
+    font-size: 65px;
+    margin-top: -26px;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.h2-menu {
+    font-family: FuenteHarryPotter;
+    color: #eeba30;
+    text-shadow: 2px 2px 4px #740001;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+
+
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #740001;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #eeba30;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+
+}
+
+.nav-menu ul li a:hover {
+    background-color: #f4c430;
+    color: #000;
+}
+
+h2 {
+
+    font-size: 28px;
+    padding-top: 2rem 0 1rem 0;
+    text-align: center;
+    color: #f8f9fa;
+    margin-top: 30px;
+}
+
+.art-pelis {
+    background-color: rgb(42, 42, 48);
+    border: 2px solid #740001;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h3 {
+
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    color: #f8f9fa;
+    border-bottom: 2px solid #eeba30;
+}
+
+h4 {
+
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 1rem 0 .5rem 0;
+    color: #eeba30;
+}
+
+.ficha-pelis {
+
+
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.ficha-pelis li {
+    margin-bottom: 5px;
+}
+
+.primera-palabra {
+    font-weight: bold;
+    color: #eeba30;
+
+}
+
+
+.t-sinopsis {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem 0 .5rem 0;
+    color: #eeba30;
+}
+
+.forma-sinopsis {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.bloque-texto {
+    width: 70%;
+}
+
+.bloque-texto p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #f8f9fa;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.forma-sinopsis p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.portada-pelis {
+    width: 25%;
+    height: auto;
+    border-radius: 2px;
+    border: 2px solid #eeba30;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.enlace-pelis {
+    text-decoration: none;
+    display: inline-block;
+    color: #740001;
+    font-weight: bold;
+    background-color: #eeba30;
+    border-radius: 20px;
+    padding: 8px 20px;
+    transition: transform 0.2s ease;
+}
+
+.enlace-pelis:hover {
+    cursor: pointer;
+    background-color: #f4c430;
+    transform: scale(1.05);
+}
+
+.enlace-pelis:hover {
+    cursor: pointer;
+}
+
+.pie-pagina {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #740001;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.pie-pagina ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.pie-pagina a {
+    color: #eeba30;
+    text-decoration: none;
+}
+
+.pie-pagina a:hover {
+    text-decoration: underline;
+}
+
+
+/* LIBROS */
+
+/* INDEX */
+
+.art-inicio {
+    background-color: rgb(42, 42, 48);
+    border: 2px solid #740001;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.titulo-inicio {
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    color: whitesmoke;
+    border-bottom: 2px solid #eeba30;
+}
+
+.p-inicio {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #f8f9fa;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+
+.enlace-inicio {
+    text-decoration: none;
+    display: inline-block;
+    color: #740001;
+    font-weight: bold;
+    background-color: #eeba30;
+    border-radius: 20px;
+    padding: 6px 16px;
+    transition: transform 0.2s ease;
+}
+
+.enlace-inicio:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.t-enlace {
+    font-size: 5px;
+}
+
+/* DISCOS */
+
+.portada-discos {
+    width: 50%;
+    height: auto;
+    display: block;
+   margin: auto;
+    border-radius: 2px;
+    border: 2px solid #eeba30;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    
+}
